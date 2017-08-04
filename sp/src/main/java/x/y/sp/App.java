@@ -40,7 +40,7 @@ public class App {
 			for(String s : artList){
 				System.out.println(s);
 				String fileName = s.split("id/")[1] + ".html";
-				String artHtml = http.getRequest(s, 5000);
+				String artHtml = http.getRequest(s, 9000);
 				jsonUtil.parsePage(artHtml,fileName);
 				Thread.sleep(NumberUtil.randomNum());
 			}
