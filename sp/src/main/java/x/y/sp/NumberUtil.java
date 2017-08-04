@@ -4,9 +4,9 @@ import java.util.Random;
 
 public class NumberUtil {
 
-	public int randomNum(){
+	public static int randomNum(){
 		Random r=new Random(); 
-		return r.nextInt(5)*1000;
+		return r.nextInt(3)*1000;
 	}
 	
 	public static void main(String[] args){
