@@ -6,7 +6,7 @@ public class NumberUtil {
 
 	public static int randomNum(){
 		Random r=new Random(); 
-		return r.nextInt(3)*100;
+		return r.nextInt(4)*110;
 	}
 	
 	public static void main(String[] args){

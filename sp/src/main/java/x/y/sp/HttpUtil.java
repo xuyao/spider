@@ -21,8 +21,8 @@ public class HttpUtil {
 		}
 		String cookie = FileUtils.readLines(new File("src/main/java/cookie.txt"),"utf-8").get(0);
 		URLConnection conn = u.openConnection();
-		conn.setConnectTimeout(timeOut);
-		conn.setReadTimeout(timeOut);
+		conn.setConnectTimeout(59000);
+		conn.setReadTimeout(59000);
         conn.setRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8");  
         conn.setRequestProperty("Accept-Encoding", "gzip, deflate, sdch, br");
         conn.setRequestProperty("Accept-Language", "zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4"); 
@@ -65,8 +65,8 @@ public class HttpUtil {
 		}
 		String cookie = "PHPSESSID=lf95c5bh889u41mabqo1nt95q3; __utmt=1; __utmt_b=1; teacherUsername=tairo; rk-lab-aware-cookie=4879964+1501743843%3B; BIGipServer~LAZ_Prod~laz_prod_kidsa-z=1694555914.6699.0000; __utma=123938188.519210344.1501565901.1501727362.1501743832.5; __utmb=123938188.6.10.1501743832; __utmc=123938188; __utmz=123938188.1501727362.4.3.utmcsr=raz-kids.com|utmccn=(referral)|utmcmd=referral|utmcct=/; __utma=61885683.530806340.1501565901.1501727362.1501743832.5; __utmb=61885683.6.10.1501743832; __utmc=61885683; __utmz=61885683.1501727362.4.3.utmcsr=raz-kids.com|utmccn=(referral)|utmcmd=referral|utmcct=/";
 		URLConnection conn = u.openConnection();
-		conn.setConnectTimeout(9000);
-		conn.setReadTimeout(9000);
+		conn.setConnectTimeout(59000);
+		conn.setReadTimeout(59000);
         conn.setRequestProperty("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8");  
         conn.setRequestProperty("Accept-Encoding", "gzip, deflate, sdch, br");
         conn.setRequestProperty("Accept-Language", "zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4"); 

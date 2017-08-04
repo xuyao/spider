@@ -104,7 +104,7 @@ public class JsonUtil {
 									String audioUrl = jsonAudioUrl.get("audio_url").toString();
 									if(StringUtils.isEmpty(audioUrl))
 										continue;
-									System.err.println(audioUrl);
+//									System.err.println(audioUrl);
 									try {
 										if(ConstsUtil.mp3Map.get(audioUrl)!=null)//判断是否以前下过否则就不用再下了。
 											continue;
