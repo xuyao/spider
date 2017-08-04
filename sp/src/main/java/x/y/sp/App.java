@@ -16,11 +16,12 @@ public class App
 		JsonUtil jsonUtil = new JsonUtil();
 		
 		try {
-		String html = http.getRequest("https://www.kidsa-z.com/main/ReadingBookRoom/collectionId/1/level/aa", 3000);
+		String html = http.getRequest("https://www.kidsa-z.com/main/ReadingBookRoom/collectionId/1/level/aa", 5000);
 		List<String> artList = new JsonUtil().parsePageList(html);
 		for(String artUrl : artList){
 			String fileName = artUrl.split("id/")[1] + ".html";
-			jsonUtil.parsePage(html,fileName);
+			String artHtml = http.getRequest(artUrl, 5000);
+			jsonUtil.parsePage(artHtml,fileName);
 			Thread.sleep(NumberUtil.randomNum());
 		}
 
