@@ -61,11 +61,18 @@ public class JsonUtil {
 					JSONObject jsonObj = (JSONObject)itJsArr.next();
 					//下载image图片
 					String jpgUrl = jsonObj.get("page_image").toString();
-					try {
-						http.download(jpgUrl, filePath+jpgUrl.replaceAll(contentweb, ""));
-						Thread.sleep(NumberUtil.randomNum());
-					} catch (Exception e1) {
-						e1.printStackTrace();
+					System.out.println(jpgUrl);
+//					try {
+//						http.download(jpgUrl, filePath+jpgUrl.replaceAll(contentweb, ""));
+//						Thread.sleep(NumberUtil.randomNum());
+//					} catch (Exception e1) {
+//						e1.printStackTrace();
+//					}
+			        try {
+		        	DownUtil downUtil = new DownUtil(jpgUrl,filePath+jpgUrl.replaceAll(contentweb, ""),4);
+					downUtil.downLoad();
+					} catch (Exception ex) {
+						ex.printStackTrace();
 					}
 					
 					//下载mp3
@@ -83,11 +90,17 @@ public class JsonUtil {
 							if(StringUtils.isEmpty(sectionAudioUrl))
 								continue;
 							System.out.println(sectionAudioUrl);
-							try {
-								http.download(sectionAudioUrl, filePath+sectionAudioUrl.replaceAll(contentweb, ""));
-								Thread.sleep(NumberUtil.randomNum());
-							} catch (Exception e1) {
-								e1.printStackTrace();
+//							try {
+//								http.download(sectionAudioUrl, filePath+sectionAudioUrl.replaceAll(contentweb, ""));
+//								Thread.sleep(NumberUtil.randomNum());
+//							} catch (Exception e1) {
+//								e1.printStackTrace();
+//							}
+					        try {
+					        	DownUtil downUtil = new DownUtil(sectionAudioUrl,filePath+sectionAudioUrl.replaceAll(contentweb, ""),4);
+								downUtil.downLoad();
+								} catch (Exception ex) {
+									ex.printStackTrace();
 							}
 							
 							JSONArray jsonArrPhrases = (JSONArray)jsonSections.get("phrases");
@@ -105,14 +118,22 @@ public class JsonUtil {
 									if(StringUtils.isEmpty(audioUrl))
 										continue;
 //									System.err.println(audioUrl);
-									try {
+//									try {
+//										if(ConstsUtil.mp3Map.get(audioUrl)!=null)//判断是否以前下过否则就不用再下了。
+//											continue;
+//										http.download(audioUrl, filePath+audioUrl.replaceAll(contentweb, ""));
+//										ConstsUtil.mp3Map.put(audioUrl, audioUrl);
+//										Thread.sleep(NumberUtil.randomNum());
+//									} catch (Exception e1) {
+//										e1.printStackTrace();
+//									}
+							        try {
 										if(ConstsUtil.mp3Map.get(audioUrl)!=null)//判断是否以前下过否则就不用再下了。
-											continue;
-										http.download(audioUrl, filePath+audioUrl.replaceAll(contentweb, ""));
-										ConstsUtil.mp3Map.put(audioUrl, audioUrl);
-										Thread.sleep(NumberUtil.randomNum());
-									} catch (Exception e1) {
-										e1.printStackTrace();
+										continue;
+							        	DownUtil downUtil = new DownUtil(sectionAudioUrl,filePath+sectionAudioUrl.replaceAll(contentweb, ""),4);
+										downUtil.downLoad();
+										} catch (Exception ex) {
+											ex.printStackTrace();
 									}
 								}
 								

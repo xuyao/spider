@@ -20,6 +20,14 @@ public class AppList {
 		}
 		
 		
+//        try {
+//        	DownUtil downUtil = new DownUtil("https://ss0.baidu.com/"
+//                    + "6ONWsjip0QIZ8tyhnq/it/u=1927822194,1885130936&fm=80&w=179&h=119&img.JPEG","11.JPEG",4);
+//			downUtil.downLoad();
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//		}
+		
 	}
     
 }
