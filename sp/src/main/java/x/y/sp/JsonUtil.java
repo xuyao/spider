@@ -25,11 +25,14 @@ public class JsonUtil {
 		while(it.hasNext()){
 			Element e = (Element)it.next();
 			Elements alist = e.getElementsByTag("a");
-			Iterator ita = alist.listIterator();
-			while(ita.hasNext()){
-				Element ae = (Element)ita.next();
-				list.add(ConstsUtil.getValue("website")+ae.attr("href"));
-			}
+			Element ae = (Element)alist.get(1);//取三个a标签的第二个只是听力的
+			list.add(ConstsUtil.getValue("website2")+ae.attr("href"));
+			
+//			Iterator ita = alist.listIterator();
+//			while(ita.hasNext()){
+//				Element ae = (Element)ita.next();
+//				list.add(ConstsUtil.getValue("website2")+ae.attr("href"));
+//			}
 		}
 		return list;
 	}
@@ -49,7 +52,7 @@ public class JsonUtil {
 			//开始解析json
 			String js = e.data();
 			if(js.contains("var studentBook")){
-				//System.out.println(StringUtils.trim(js));
+				js = StringUtils.trim(js);
 				String[] st = js.split(", ");
 				JSONArray jsonArray = new JSONArray(st[2]);
 				Iterator itJsArr = jsonArray.iterator();
