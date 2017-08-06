@@ -4,6 +4,7 @@ import java.io.File;
 import java.util.List;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.commons.lang.StringUtils;
 
 public class App {
 	
@@ -39,17 +40,40 @@ public class App {
 			List<String> artList = FileUtils.readLines(new File("src/main/java/artList.txt"), "utf-8");
 			for(String s : artList){
 				System.out.println(s);
-				String fileName = s.split("id/")[1] + ".html";
-				String artHtml = http.getRequest(s, 9000);
-				jsonUtil.parsePage(artHtml,fileName);
+				String[] arrs = s.split(";");
+				if(StringUtils.isNotEmpty(arrs[0])){
+					String artHtml = http.getRequest(arrs[0], 9000);
+					jsonUtil.parseListenPage(artHtml,arrs[1]+".html");
+				}
+				if(StringUtils.isNotEmpty(arrs[2])){
+					String artHtml = http.getRequest(arrs[2], 9000);
+					jsonUtil.parseReadPage(artHtml,arrs[3]+".html");
+				}
 				Thread.sleep(NumberUtil.randomNum());
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
+		}finally{
+			ConstsUtil.write();
+			System.out.println("********************************************");
+			System.out.println("**                 **                     **");
+			System.out.println("**                 **                     **");
+			System.out.println("**                 **                     **");
+			System.out.println("**                 **                     **");
+			System.out.println("**                 **                     **");
+			System.out.println("**                 **                     **");
+			System.out.println("**                 **                     **");
+			System.out.println("**                 **                     **");
+			System.out.println("**                 **                     **");
+			System.out.println("**                 **                     **");
+			System.out.println("**                 **                     **");
+			System.out.println("**                 **                     **");
+			System.out.println("**                 **                     **");
+			System.out.println("**                 **                     **");
+			System.out.println("**                 **                     **");
+			System.out.println("**                 **                     **");
+			System.out.println("********************************************");
 		}
-		
-		
-		ConstsUtil.write();
 	}
     
 }

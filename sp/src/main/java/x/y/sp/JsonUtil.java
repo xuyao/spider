@@ -25,8 +25,19 @@ public class JsonUtil {
 		while(it.hasNext()){
 			Element e = (Element)it.next();
 			Elements alist = e.getElementsByTag("a");
-			Element ae = (Element)alist.get(1);//取三个a标签的第二个只是听力的
-			list.add(ConstsUtil.getValue("website2")+ae.attr("href"));
+			
+			Element listen = (Element)alist.get(1);//取三个a标签的第二个只是听力的
+			Element read = null;
+			if(alist.size()<3){
+				list.add(ConstsUtil.getValue("website2")+listen.attr("href")+";"
+						+listen.attr("title"));
+			}
+			else{
+				read = (Element)alist.get(2);//取三个a标签的第三个是阅读的
+				list.add(ConstsUtil.getValue("website2")+listen.attr("href")+";"
+				+listen.attr("title")+";"+ConstsUtil.getValue("website2")+read.attr("href")
+				+";"+read.attr("title"));
+			}
 			
 //			Iterator ita = alist.listIterator();
 //			while(ita.hasNext()){
@@ -37,7 +48,7 @@ public class JsonUtil {
 		return list;
 	}
 	
-	public void parsePage(String html, String fileName){
+	public void parseListenPage(String html, String fileName){
 		Document doc = Jsoup.parse(html);
 		Elements elements = doc.getElementsByTag("script");
 		Iterator it = elements.listIterator();
@@ -54,14 +65,14 @@ public class JsonUtil {
 			if(js.contains("var studentBook")){
 				js = StringUtils.trim(js);
 				String[] st = js.split(", ");
-				JSONArray jsonArray = new JSONArray(st[2]);
+				JSONArray jsonArray = new JSONArray(st[2]);//book对象第3个参数
 				Iterator itJsArr = jsonArray.iterator();
 				
 				while(itJsArr.hasNext()){
 					JSONObject jsonObj = (JSONObject)itJsArr.next();
 					//下载image图片
 					String jpgUrl = jsonObj.get("page_image").toString();
-					System.out.println(jpgUrl);
+//					System.out.println(jpgUrl);
 //					try {
 //						http.download(jpgUrl, filePath+jpgUrl.replaceAll(contentweb, ""));
 //						Thread.sleep(NumberUtil.randomNum());
@@ -89,7 +100,7 @@ public class JsonUtil {
 							String sectionAudioUrl = jsonSections.get("section_audio").toString();
 							if(StringUtils.isEmpty(sectionAudioUrl))
 								continue;
-							System.out.println(sectionAudioUrl);
+//							System.out.println(sectionAudioUrl);
 //							try {
 //								http.download(sectionAudioUrl, filePath+sectionAudioUrl.replaceAll(contentweb, ""));
 //								Thread.sleep(NumberUtil.randomNum());
@@ -130,35 +141,52 @@ public class JsonUtil {
 							        try {
 										if(ConstsUtil.mp3Map.get(audioUrl)!=null)//判断是否以前下过否则就不用再下了。
 										continue;
-							        	DownUtil downUtil = new DownUtil(sectionAudioUrl,filePath+sectionAudioUrl.replaceAll(contentweb, ""),4);
+							        	DownUtil downUtil = new DownUtil(audioUrl,filePath+audioUrl.replaceAll(contentweb, ""),4);
 										downUtil.downLoad();
+										ConstsUtil.mp3Map.put(audioUrl, audioUrl);
 										} catch (Exception ex) {
 											ex.printStackTrace();
 									}
 								}
-								
 							}
-								
 						}
 					}
-					
 				}
-				
-				
 			}
-			
 		}
 		
 		//下载html
 		String contentrelpace = ConstsUtil.getValue("contentrelpace");
 		html = html.replaceAll("/shared/", "shared/");
 		html = html.replaceAll(contentrelpace, "");
+		html = html.replaceAll("\"animation_content\"\\:\\{[\\s\\S]*?\\}", "\"animation_content\":false");
 		try {
 			FileUtils.writeStringToFile(new File(filePath+fileName), html, "utf-8");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 	}
+	
+	
+	
+	public void parseReadPage(String html, String fileName){
+		Document doc = Jsoup.parse(html);
+		Elements elements = doc.getElementsByTag("script");
+		Iterator it = elements.listIterator();
+		String filePath = ConstsUtil.getValue("filepath");
+		
+		//下载html
+		String contentrelpace = ConstsUtil.getValue("contentrelpace");
+		html = html.replaceAll("/shared/", "shared/");
+		html = html.replaceAll(contentrelpace, "");
+		html = html.replaceAll("\"animation_content\"\\:\\{[\\s\\S]*?\\}", "\"animation_content\":false");
+		try {
+			FileUtils.writeStringToFile(new File(filePath+fileName), html, "utf-8");
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
 	
 	
 }

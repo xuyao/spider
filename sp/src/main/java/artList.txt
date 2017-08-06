@@ -1,66 +1,38 @@
-https://www.kidsa-z.com/main/Activity/id/11267
-https://www.kidsa-z.com/main/Activity/id/12988
-https://www.kidsa-z.com/main/Activity/id/15273
-https://www.kidsa-z.com/main/Activity/id/6597
-https://www.kidsa-z.com/main/Activity/id/26128
-https://www.kidsa-z.com/main/Activity/id/14511
-https://www.kidsa-z.com/main/Activity/id/6989
-https://www.kidsa-z.com/main/Activity/id/13377
-https://www.kidsa-z.com/main/Activity/id/14607
-https://www.kidsa-z.com/main/Activity/id/13378
-https://www.kidsa-z.com/main/Activity/id/14610
-https://www.kidsa-z.com/main/Activity/id/23137
-https://www.kidsa-z.com/main/Activity/id/29074
-https://www.kidsa-z.com/main/Activity/id/29595
-https://www.kidsa-z.com/main/Activity/id/17545
-https://www.kidsa-z.com/main/Activity/id/23967
-https://www.kidsa-z.com/main/Activity/id/13526
-https://www.kidsa-z.com/main/Activity/id/26635
-https://www.kidsa-z.com/main/Activity/id/25310
-https://www.kidsa-z.com/main/Activity/id/13359
-https://www.kidsa-z.com/main/Activity/id/29075
-https://www.kidsa-z.com/main/Activity/id/15265
-https://www.kidsa-z.com/main/Activity/id/9319
-https://www.kidsa-z.com/main/Activity/id/12989
-https://www.kidsa-z.com/main/Activity/id/13360
-https://www.kidsa-z.com/main/Activity/id/14523
-https://www.kidsa-z.com/main/Activity/id/9330
-https://www.kidsa-z.com/main/Activity/id/12992
-https://www.kidsa-z.com/main/Activity/id/7762
-https://www.kidsa-z.com/main/Activity/id/9335
-https://www.kidsa-z.com/main/Activity/id/14937
-https://www.kidsa-z.com/main/Activity/id/15069
-https://www.kidsa-z.com/main/Activity/id/23913
-https://www.kidsa-z.com/main/Activity/id/9343
-https://www.kidsa-z.com/main/Activity/id/14574
-https://www.kidsa-z.com/main/Activity/id/14525
-https://www.kidsa-z.com/main/Activity/id/14617
-https://www.kidsa-z.com/main/Activity/id/14527
-https://www.kidsa-z.com/main/Activity/id/8025
-https://www.kidsa-z.com/main/Activity/id/12994
-https://www.kidsa-z.com/main/Activity/id/8140
-https://www.kidsa-z.com/main/Activity/id/12995
-https://www.kidsa-z.com/main/Activity/id/13381
-https://www.kidsa-z.com/main/Activity/id/29921
-https://www.kidsa-z.com/main/Activity/id/12997
-https://www.kidsa-z.com/main/Activity/id/29243
-https://www.kidsa-z.com/main/Activity/id/8310
-https://www.kidsa-z.com/main/Activity/id/17969
-https://www.kidsa-z.com/main/Activity/id/13528
-https://www.kidsa-z.com/main/Activity/id/13863
-https://www.kidsa-z.com/main/Activity/id/14960
-https://www.kidsa-z.com/main/Activity/id/14958
-https://www.kidsa-z.com/main/Activity/id/13000
-https://www.kidsa-z.com/main/Activity/id/23682
-https://www.kidsa-z.com/main/Activity/id/8457
-https://www.kidsa-z.com/main/Activity/id/11121
-https://www.kidsa-z.com/main/Activity/id/15243
-https://www.kidsa-z.com/main/Activity/id/13001
-https://www.kidsa-z.com/main/Activity/id/8521
-https://www.kidsa-z.com/main/Activity/id/23106
-https://www.kidsa-z.com/main/Activity/id/17600
-https://www.kidsa-z.com/main/Activity/id/15279
-https://www.kidsa-z.com/main/Activity/id/24965
-https://www.kidsa-z.com/main/Activity/id/23358
-https://www.kidsa-z.com/main/Activity/id/13003
-https://www.kidsa-z.com/main/Activity/id/14551
+https://www.kidsa-z.com/main/Activity/id/25425;Listen to Many Roads;https://www.kidsa-z.com/main/Activity/id/30388;Read Many Roads
+https://www.kidsa-z.com/main/Activity/id/7458;Listen to Monster Reading Buddies;https://www.kidsa-z.com/main/Activity/id/20416;Read Monster Reading Buddies
+https://www.kidsa-z.com/main/Activity/id/7506;Listen to Mother's Day;https://www.kidsa-z.com/main/Activity/id/18707;Read Mother's Day
+https://www.kidsa-z.com/main/Activity/id/23761;Listen to Motorcycles;https://www.kidsa-z.com/main/Activity/id/23939;Read Motorcycles
+https://www.kidsa-z.com/main/Activity/id/7617;Listen to Needs and Wants;https://www.kidsa-z.com/main/Activity/id/20418;Read Needs and Wants
+https://www.kidsa-z.com/main/Activity/id/7638;Listen to Night Animals;https://www.kidsa-z.com/main/Activity/id/20420;Read Night Animals
+https://www.kidsa-z.com/main/Activity/id/15213;Listen to On the Moon;https://www.kidsa-z.com/main/Activity/id/20422;Read On the Moon
+https://www.kidsa-z.com/main/Activity/id/7704;Listen to Our Camping Trip;https://www.kidsa-z.com/main/Activity/id/18689;Read Our Camping Trip
+https://www.kidsa-z.com/main/Activity/id/24972;Listen to Our Class Flag;https://www.kidsa-z.com/main/Activity/id/20424;Read Our Class Flag
+https://www.kidsa-z.com/main/Activity/id/23679;Listen to A Pet for Jupe;https://www.kidsa-z.com/main/Activity/id/20426;Read A Pet for Jupe
+https://www.kidsa-z.com/main/Activity/id/13324;Listen to Pi�atas Are Fun;https://www.kidsa-z.com/main/Activity/id/20428;Read Pi�atas Are Fun
+https://www.kidsa-z.com/main/Activity/id/27539;Listen to Princess Prefix;https://www.kidsa-z.com/main/Activity/id/27138;Read Princess Prefix
+https://www.kidsa-z.com/main/Activity/id/30177;Listen to Ramadan Is Here;https://www.kidsa-z.com/main/Activity/id/30277;Read Ramadan Is Here
+https://www.kidsa-z.com/main/Activity/id/29239;Listen to Rock Climbing;https://www.kidsa-z.com/main/Activity/id/29970;Read Rock Climbing
+https://www.kidsa-z.com/main/Activity/id/9375;Listen to Scaredy Crow;https://www.kidsa-z.com/main/Activity/id/18693;Read Scaredy Crow
+https://www.kidsa-z.com/main/Activity/id/24750;Listen to Seashells;https://www.kidsa-z.com/main/Activity/id/24819;Read Seashells
+https://www.kidsa-z.com/main/Activity/id/26129;Listen to Sir Suffix;https://www.kidsa-z.com/main/Activity/id/25399;Read Sir Suffix
+https://www.kidsa-z.com/main/Activity/id/12737;Listen to Sleds;https://www.kidsa-z.com/main/Activity/id/20430;Read Sleds
+https://www.kidsa-z.com/main/Activity/id/8178;Listen to Smart Crows;https://www.kidsa-z.com/main/Activity/id/20432;Read Smart Crows
+https://www.kidsa-z.com/main/Activity/id/9411;Listen to The Snowstorm;https://www.kidsa-z.com/main/Activity/id/18739;Read The Snowstorm
+https://www.kidsa-z.com/main/Activity/id/12202;Listen to Some Birds Go;https://www.kidsa-z.com/main/Activity/id/20434;Read Some Birds Go
+https://www.kidsa-z.com/main/Activity/id/13250;Listen to Stella Storyteller;https://www.kidsa-z.com/main/Activity/id/20436;Read Stella Storyteller
+https://www.kidsa-z.com/main/Activity/id/26295;Listen to The Sunflower Hut;https://www.kidsa-z.com/main/Activity/id/26616;Read The Sunflower Hut
+https://www.kidsa-z.com/main/Activity/id/13854;Listen to Super Thrift;https://www.kidsa-z.com/main/Activity/id/20438;Read Super Thrift
+https://www.kidsa-z.com/main/Activity/id/8317;Listen to SuperZero;https://www.kidsa-z.com/main/Activity/id/20440;Read SuperZero
+https://www.kidsa-z.com/main/Activity/id/8353;Listen to Taste This;https://www.kidsa-z.com/main/Activity/id/18719;Read Taste This
+https://www.kidsa-z.com/main/Activity/id/15289;Listen to Thank You Everyone;https://www.kidsa-z.com/main/Activity/id/20442;Read Thank You Everyone
+https://www.kidsa-z.com/main/Activity/id/26946;Listen to The Three Little Pigs;https://www.kidsa-z.com/main/Activity/id/18747;Read The Three Little Pigs
+https://www.kidsa-z.com/main/Activity/id/13369;Listen to The Tortoise and the Hare;https://www.kidsa-z.com/main/Activity/id/20444;Read The Tortoise and the Hare
+https://www.kidsa-z.com/main/Activity/id/8482;Listen to Trucking;https://www.kidsa-z.com/main/Activity/id/20446;Read Trucking
+https://www.kidsa-z.com/main/Activity/id/14968;Listen to Tunnels;https://www.kidsa-z.com/main/Activity/id/17886;Read Tunnels
+https://www.kidsa-z.com/main/Activity/id/8500;Listen to Two for Me One for You;https://www.kidsa-z.com/main/Activity/id/20448;Read Two for Me One for You
+https://www.kidsa-z.com/main/Activity/id/9474;Listen to Using Less Energy;https://www.kidsa-z.com/main/Activity/id/17475;Read Using Less Energy
+https://www.kidsa-z.com/main/Activity/id/14991;Listen to We Do Yoga;https://www.kidsa-z.com/main/Activity/id/17889;Read We Do Yoga
+https://www.kidsa-z.com/main/Activity/id/9499;Listen to Weird White House Pets;https://www.kidsa-z.com/main/Activity/id/18701;Read Weird White House Pets
+https://www.kidsa-z.com/main/Activity/id/28943;Listen to What's In That Shell;https://www.kidsa-z.com/main/Activity/id/29522;Read What's In That Shell
+https://www.kidsa-z.com/main/Activity/id/8737;Listen to Where Is Cub;https://www.kidsa-z.com/main/Activity/id/18685;Read Where Is Cub
+https://www.kidsa-z.com/main/Activity/id/24968;Listen to Who Needs Rain;https://www.kidsa-z.com/main/Activity/id/24821;Read Who Needs Rain

@@ -8,7 +8,7 @@ public class AppList {
 		HttpUtil http = new HttpUtil();
 		
 		try {
-			String listUrl = "https://www.kidsa-z.com/main/ReadingBookRoom/collectionId/1/level/aa";
+			String listUrl = "https://www.kidsa-z.com/main/ReadingBookRoom/collectionId/1/level/F";
 			String html;
 			html = http.getRequest(listUrl, 5000);
 			List<String> artList = new JsonUtil().parsePageList(html);
