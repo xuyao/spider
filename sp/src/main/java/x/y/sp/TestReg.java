@@ -8,7 +8,7 @@ import org.apache.commons.io.FileUtils;
 public class TestReg {
 
 	public static void main(String[] args) throws Exception{
-	        String path = "D:\\eglish\\D\\"; // 路径
+	        String path = "D:\\eglish\\A\\"; // 路径
 	        File f = new File(path);
 	        if (!f.exists()) {
 	            System.out.println(path + " not exists");
@@ -22,7 +22,8 @@ public class TestReg {
 	            	System.out.println(fs.getName());
 	            	
 	    			String s = FileUtils.readFileToString(new File(path+fs.getName()),"utf-8");
-	    			s = s.replaceAll("\"animation_content\"\\:\\{[\\s\\S]*?\\}", "\"animation_content\":false");
+//	    			s = s.replaceAll("\"animation_content\"\\:\\{[\\s\\S]*?\\}", "\"animation_content\":false");
+	    			s = s.replaceAll("audio\\\\/dictionary\\\\/", "..\\\\/dictionary\\\\/");
 	    			FileUtils.writeStringToFile(new File(path+fs.getName()), s, "utf-8");
 	            }
 	        }
